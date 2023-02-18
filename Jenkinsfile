@@ -35,7 +35,7 @@ pipeline {
          stage('Test Build') 
         {
             steps {
-                echo ' Build Started'
+                echo ' Build Started...'
                 echo 'Build completed'
             }
         }
