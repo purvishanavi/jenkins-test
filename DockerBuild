@@ -4,17 +4,18 @@ pipeline {
     stages {
         stage('DockerBuild') 
         {
-            steps {
+            steps 
+            {
                 sh 'docker build -t webappjenkins .'
                 
             }
         }
         stage('Docker Run') 
         {
-            steps {
+            steps 
+            {
                 sh 'docker run -p 80:80 webappjenkins'
             }
         }
-       
     }
 }
