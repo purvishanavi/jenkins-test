@@ -32,5 +32,12 @@ pipeline {
                 echo 'Test completed'
             }
         }
+         stage('Test Build') 
+        {
+            steps {
+                echo ' Build Started...'
+                echo 'Build completed'
+            }
+        }
     }
 }
