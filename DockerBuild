@@ -5,10 +5,8 @@ pipeline {
         stage('DockerBuild') 
         {
             steps 
-            {
-                sh 'ls -l'                
-                sh 'echo "Shanu@2016" | sudo -S sudo docker build -t webappjenkins .'
-                
+            {                          
+                sh 'docker build -t webappjenkins .'                
             }
         }
         stage('Docker Run') 
