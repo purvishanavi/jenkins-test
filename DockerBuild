@@ -6,8 +6,7 @@ pipeline {
         {
             steps 
             {
-                sh 'ls -l'
-                sh 'sudo su'
+                sh 'ls -l'                
                 sh 'echo "Shanu@2016" | sudo -S docker build -t webappjenkins .'
                 
             }
