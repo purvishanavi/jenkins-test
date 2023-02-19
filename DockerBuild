@@ -8,7 +8,7 @@ pipeline {
             {
                 sh 'ls -l'
                 sh 'sudo su'
-                sh 'docker build -t webappjenkins .'
+                sh 'echo "Shanu@2016" | sudo -S docker build -t webappjenkins .'
                 
             }
         }
