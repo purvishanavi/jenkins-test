@@ -6,7 +6,7 @@ pipeline {
         {
             steps 
             {
-                sh 'docker build -t webappjenkins .'
+                sh 'sudo docker build -t webappjenkins .'
                 
             }
         }
@@ -14,7 +14,7 @@ pipeline {
         {
             steps 
             {
-                sh 'docker run -p 80:80 webappjenkins'
+                sh 'sudo docker run -p 80:80 webappjenkins'
             }
         }
     }
